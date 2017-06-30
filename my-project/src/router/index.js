@@ -6,21 +6,21 @@ import test from '@/views/test'
 Vue.use(Router)
 
 export default new Router({
-	linkActiveClass:'link',
-	routes: [
+  linkActiveClass: 'link',
+  routes: [
 	{
-		path:'/',
-		redirect:'/test'
-	},
-	{
-		path: '/Hello',
-		name: 'Hello',
-		component: Hello
-	},
-	{
-		path: '/test',
-		name: 'test',
-		component: test
-	}
-	]
+      path: '/',
+      redirect: '/test'
+    },
+    {
+      path: '/Hello',
+      name: 'Hello',
+      component: Hello
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: test
+    }
+  ]
 })
